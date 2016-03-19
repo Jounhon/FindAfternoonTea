@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="64ebe8dc-3c74-4200-9c42-4dd691159f5e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://iweb.csie.ntut.edu.tw:9080/Final38/WebServices/MailService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MailService1.disco" MetadataType="Disco" ID="6b0fca52-02d8-4ac5-b8ea-e3069bf366e3" SourceId="1" SourceUrl="http://iweb.csie.ntut.edu.tw:9080/final38/WebServices/MailService.svc?disco" />
+    <MetadataFile FileName="MailService3.xsd" MetadataType="Schema" ID="db58b27a-6650-4337-a99c-cab494606c68" SourceId="1" SourceUrl="http://iweb.csie.ntut.edu.tw:9080/final38/WebServices/MailService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MailService31.xsd" MetadataType="Schema" ID="f10c829a-f198-4447-be09-10791b13a9e7" SourceId="1" SourceUrl="http://iweb.csie.ntut.edu.tw:9080/final38/WebServices/MailService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MailService1.wsdl" MetadataType="Wsdl" ID="853ae70a-1643-46ef-ab31-541ad17306aa" SourceId="1" SourceUrl="http://iweb.csie.ntut.edu.tw:9080/final38/WebServices/MailService.svc?wsdl" />
+    <MetadataFile FileName="MailService32.xsd" MetadataType="Schema" ID="9ba6b7ff-d95f-4c76-a1b7-fa2dc81049ef" SourceId="1" SourceUrl="http://iweb.csie.ntut.edu.tw:9080/final38/WebServices/MailService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

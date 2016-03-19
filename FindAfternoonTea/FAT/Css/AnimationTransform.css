@@ -1,0 +1,122 @@
+﻿@charset "utf-8";
+/*=================================
+CSS Animation & Transform
+November 2012
+By : Away
+http://www.dfuns.idv.tw
+http://away.myds.me/wordpress
+=================================*/
+
+body{ background:url(''); font-family:Arial, Helvetica, sans-serif;}
+
+
+h1{ text-align:center; color:#999; font-size:3em;}
+.ftr{ text-align:center; color:#FFF; padding-top:2em;}
+.bCtr{ width:840px; margin:auto ; overflow:hidden; padding:2em 0;}
+.box{ position:relative; width:420px; float:left;}
+.box:hover .out, .box:hover .in, .box:hover .blink{ -moz-animation-play-state:paused; -webkit-animation-play-state:paused;}
+
+.blue .out, .blue .in{ box-shadow:0 0 35px #06F;}
+.red .out, .red .in{ box-shadow:0 0 35px #900;}
+
+.out, .in{ display:block; border-radius:100%; border: solid 5px #FFF; margin:auto;}
+.out{	width:300px; height:300px;}
+.in{ width:200px; height:200px; position:absolute; top:50px; left:105px;}
+.blue .out{	
+	border-color: transparent #0FF #0FF transparent;
+	-moz-animation:outR 1s infinite linear;
+	-webkit-animation:outR 1s infinite linear;}
+.blue .in{
+	border-color: #0FF transparent transparent  #0FF;
+	-moz-animation:inR 1s infinite linear;
+	-webkit-animation:inR 1s infinite linear;}
+.red .out{
+	border-color: #F00 transparent;
+	-moz-animation:outR2 1s infinite ease-in-out;
+	-webkit-animation:outR2 1s infinite ease-in-out;}
+.red .in{
+	border-color: transparent #F00 transparent  #F00;
+	-moz-animation:inR2 1s infinite linear;
+	-webkit-animation:inR2 1s infinite linear;}
+
+.icon{
+	width:200px; height:120px; display:block; border-radius:100%; text-align:center; color:#FFF; padding-top:80px; font-size:1.3em; position:absolute; top:55px; left:110px; text-decoration:none;
+	text-shadow:-1px -1px #000;
+	box-shadow:0 10px 20px #000 inset;
+	}
+.icon:before, .icon:after{ content:""; display:block; background:#FFF; opacity:.05; border-radius:100%; position:absolute;}
+.icon:before{ width:100px; height:80px; top:20px; left:30px;}
+.icon:after{ width:150px; height:140px; bottom:0; left:25px;}
+
+.blue .icon{
+	background: -moz-radial-gradient(center, ellipse cover, #0F7EFD 0%, #033F7C 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #0F7EFD 0%, #033F7C 100%);}
+.red .icon{
+	background: -moz-radial-gradient(center, ellipse cover, #B20000 0%, #490404 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #B20000 0%, #490404 100%);}
+
+.adrs{ display:block; font-size:.6em; text-shadow:none;}
+.blue .adrs{ color:#6CF;}
+.red .adrs{ color:#F00;}
+.adrs:before, .adrs:after{ display:block; content:""; position:absolute;}
+.adrs:before{ border:solid 10px #FFF; width:0; height:0; bottom:25%; left:45%;}
+.blue .adrs:before{ border-color: transparent transparent #0F7EFD transparent;}
+.red .adrs:before{ border-color: transparent transparent #B20000 transparent;}
+
+.adrs:after{ width:20px; height:2px; background:#000; bottom:21.5%; left:44.5%;}
+
+.blink{ display:block; width:20px; height:2px; background:#FFF; position:absolute; bottom:21%; left:45%;}
+.blue .blink{ -moz-animation:ani .2s infinite linear;  -webkit-animation:ani .2s infinite linear;}
+.red .blink{ -moz-animation:ani2 .2s infinite linear;  -webkit-animation:ani2 .2s infinite linear;}
+
+@-moz-keyframes outR{
+	from{ -moz-transform:rotate(0);}
+	to{ -moz-transform:rotate(360deg);}
+}
+@-moz-keyframes outR2{
+	0% { -moz-transform:rotate(160deg); opacity:0;}
+	50% { -moz-transform:rotate(145deg); opacity:1; }
+	100% { -moz-transform:rotate(-320deg); opacity:0; }	
+}
+@-moz-keyframes inR{
+	from{ -moz-transform:rotate(0);}
+	to{ -moz-transform:rotate(-360deg);}
+}
+@-moz-keyframes inR2{
+	from{ -moz-transform:rotate(0);}
+	to{ -moz-transform:rotate(360deg);}
+}
+@-moz-keyframes ani{
+	from{ background:#FFF;}
+	to{ background:#F00;}
+}
+@-moz-keyframes ani2{
+	from{ background:#333;}
+	to{ background:#0FF;}
+}
+
+@-webkit-keyframes outR{
+	from{ -webkit-transform:rotate(0);}
+	to{ -webkit-transform:rotate(360deg);}
+}
+@-webkit-keyframes outR2{
+	0% { -webkit-transform:rotate(160deg); opacity:0;}
+	50% { -webkit-transform:rotate(145deg); opacity:1; }
+	100% { -webkit-transform:rotate(-320deg); opacity:0; }	
+}
+@-webkit-keyframes inR{
+	from{ -webkit-transform:rotate(0);}
+	to{ -webkit-transform:rotate(-360deg);}
+}
+@-webkit-keyframes inR2{
+	from{ -webkit-transform:rotate(0);}
+	to{ -webkit-transform:rotate(360deg);}
+}
+@-webkit-keyframes ani{
+	from{ background:#FFF;}
+	to{ background:#F00;}
+}
+@-webkit-keyframes ani2{
+	from{ background:#333;}
+	to{ background:#0FF;}
+}

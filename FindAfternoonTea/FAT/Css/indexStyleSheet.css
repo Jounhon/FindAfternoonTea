@@ -1,0 +1,120 @@
+﻿body {
+    font-family:'Source Sans Pro',sans-serif,"微軟正黑體","Microsoft JhengHei";
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    border:none;
+    letter-spacing:.1em; 
+    background-image: url('../pic/bg.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+* {
+	margin: 0;
+	padding: 0;
+
+	-webkit-font-smoothing: antialiased;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#main {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-image: url('../pic/body.gif');
+    background-repeat:repeat;
+    background-position: center;
+    opacity: .9;
+}
+#loginBox{
+    position:fixed;
+    width:500px;
+    height:auto;
+    top:25%;
+    left:50%;
+    margin-left:-240px;
+    opacity:1;
+}
+
+#loginBox #info{
+    width:100%;
+    height:auto;
+    display:none;
+    border-radius: 10px;
+}
+
+#loginBox #logButton{
+    width:100%;
+    height:auto;
+}
+#loginBox #logButton .logo{
+    width:100%;
+    height:180px;
+    background-image:url("../pic/logo.png");
+    background-position:center;
+    background-repeat:no-repeat;
+}
+#loginBox #logButton #time{
+    width:100%;
+    height:auto;
+    color:#fff;
+    font-size:80px;
+    font-weight:bolder;
+}
+#loginBox #logButton #welcome{
+    width:100%;
+    height:auto;
+    color:#fff;
+    font-size:30px;
+    font-weight:bolder;
+}
+#logButton .fb{
+    width:200px;
+    height:50px;
+    background-image:url('../pic/fb_login.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    float:left;
+}
+#logButton .fb:hover{
+    opacity:0.8;
+    cursor:pointer;
+}
+#logButton .google{
+    width:200px;
+    height:50px;
+    background-image:url('../pic/g-sign-in.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    float:left;
+    margin-left:100px;
+}
+#logButton .google:hover{
+    opacity:0.8;
+    cursor:pointer;
+}
+#loginBox #info #imgBox{
+    width:100px;
+    height:100px;
+    background-image:url();
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius: 50%;
+    background-size:contain;
+    opacity:1;
+}
+#loginBox #info p{
+    width:60%;
+    height:50px;
+    line-height:50px;
+    font-weight:bold;
+    font-size:22px;
+    background-color:rgba(255,255,255,0);
+    border-radius:5px;
+}
